@@ -24,7 +24,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #effdf5;
+  --bs-light: #ffedd5;
   --bs-dark: #0e2e50;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -54,7 +54,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #666565;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -511,7 +511,7 @@ progress {
 }
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border: 1px solid #dee2e6;
   border-radius: 5px;
   max-width: 100%;
@@ -1730,7 +1730,7 @@ progress {
   border-color: #dfc2c4;
 }
 .table-light {
-  --bs-table-bg: #effdf5;
+  --bs-table-bg: #ffedd5;
   --bs-table-striped-bg: #e3f0e9;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #d7e4dd;
@@ -3076,12 +3076,12 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 .btn-outline-light {
-  color: #effdf5;
+  color: #ffedd5;
   border-color: #effdf5;
 }
 .btn-outline-light:hover {
   color: #000;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border-color: #effdf5;
 }
 .btn-check:focus + .btn-outline-light,
@@ -3094,7 +3094,7 @@ fieldset:disabled .btn {
 .btn-outline-light.active,
 .btn-outline-light.dropdown-toggle.show {
   color: #000;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border-color: #effdf5;
 }
 .btn-check:checked + .btn-outline-light:focus,
@@ -3627,7 +3627,7 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border-color: #dee2e6 #dee2e6 #effdf5;
 }
 .nav-tabs .dropdown-menu {
@@ -4136,7 +4136,7 @@ fieldset:disabled .btn {
   font-size: 1rem;
   color: #666565;
   text-align: left;
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -4187,7 +4187,7 @@ fieldset:disabled .btn {
   margin-bottom: 0;
 }
 .accordion-item {
-  background-color: #effdf5;
+  background-color: #ffedd5;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
@@ -6834,7 +6834,7 @@ fieldset:disabled .btn {
   background-color: #0e2e50 !important;
 }
 .bg-body {
-  background-color: #effdf5 !important;
+  background-color: #ffedd5 !important;
 }
 .bg-white {
   background-color: #fff !important;
