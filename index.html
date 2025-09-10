@@ -6,6 +6,39 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
+    <meta name="theme-color" content="#9f7843" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta
+      property="og:title"
+      content="AR Homes Signature Villas | Premium Villas in Kaza"
+    />
+    <meta
+      property="og:description"
+      content="Premium and ultra-luxurious villas with excellent location and connectivity on the Vijayawada-Guntur Highway."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/img/og-image.jpg"
+    />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AR Homes" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AR Homes Signature Villas | Premium Villas in Kaza"
+    />
+    <meta
+      name="twitter:description"
+      content="Premium and ultra-luxurious villas with excellent location and connectivity on the Vijayawada-Guntur Highway."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/img/og-image.jpg"
+    />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -141,10 +174,7 @@
 
       <!-- Header Start -->
       <div class="container-fluid header bg-white p-0">
-        <div
-          class="row g-0 flex-column-reverse flex-md-row my-div"
-         
-        >
+        <div class="row g-0 flex-column-reverse flex-md-row my-div">
           <div class="col-md-6 p-5">
             <div
               style="
@@ -281,7 +311,11 @@
       <!-- About End -->
 
       <!-- Location Start -->
-      <div class="container-xxl py-5" id="location" style="background-color: #ffe1b6;">
+      <div
+        class="container-xxl py-5"
+        id="location"
+        style="background-color: #ffe1b6"
+      >
         <div class="container">
           <div
             class="text-center mx-auto mb-5 wow fadeInUp"
@@ -318,15 +352,13 @@
 
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div class="position-relative overflow-hidden pe-0">
-                
-
                 <a href="img/location_map.png" class="glightbox-map">
-                        <img
-                  class="img-fluid w-100"
-                  src="img/location_map.png"
-                  style="border-radius: 20px"
-                />
-                      </a>
+                  <img
+                    class="img-fluid w-100"
+                    src="img/location_map.png"
+                    style="border-radius: 20px"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -931,15 +963,20 @@
                 ></iframe>
                 <div
                   class="responsive-block"
-                  style="display: flex; justify-content: space-between; gap:40px"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40px;
+                  "
                 >
-                  <div style="margin-top: 20px; width: 50%;" class="width-100">
+                  <div style="margin-top: 20px; width: 50%" class="width-100">
                     <p>
-                      <i class="fa fa-map-marker-alt me-3"></i>SY.NO.384/D1A, <br />BEHIND APHRDI OFFICE, KAZAM,
-                      Mangalagiri Village, Guntur, Andhra Pradesh - 522503
+                      <i class="fa fa-map-marker-alt me-3"></i>SY.NO.384/D1A,
+                      <br />BEHIND APHRDI OFFICE, KAZAM, Mangalagiri Village,
+                      Guntur, Andhra Pradesh - 522503
                     </p>
                   </div>
-                  <div style="margin-top: 20px; width: 50%;" class="width-100">
+                  <div style="margin-top: 20px; width: 50%" class="width-100">
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p>
                       <i class="fa fa-envelope me-3"></i>
@@ -1052,21 +1089,20 @@
       });
 
       // Initialize GLightbox for the gallery as usual
-const galleryLightbox = GLightbox({
-  selector: '.glightbox'  // your existing gallery
-});
+      const galleryLightbox = GLightbox({
+        selector: ".glightbox", // your existing gallery
+      });
 
-// Initialize GLightbox separately for the map
-const mapLightbox = GLightbox({
-  selector: '.glightbox-map', // targets only the map image
-  loop: false,                // disables next/prev looping
-  slideEffect: 'none',        // removes slide animation
-  closeButton: true,           // shows only close button
-  touchNavigation: false,      // optional: disables swipe
-  autoplayVideos: false,
-  zoomable: true
-});
-
+      // Initialize GLightbox separately for the map
+      const mapLightbox = GLightbox({
+        selector: ".glightbox-map", // targets only the map image
+        loop: false, // disables next/prev looping
+        slideEffect: "none", // removes slide animation
+        closeButton: true, // shows only close button
+        touchNavigation: false, // optional: disables swipe
+        autoplayVideos: false,
+        zoomable: true,
+      });
 
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
