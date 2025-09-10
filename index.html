@@ -80,7 +80,7 @@
             z-index: 999;
           "
         >
-          <nav class="navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <nav class="navbar-expand-lg navbar-light py-0 px-4">
             <button
               type="button"
               class="navbar-toggler"
@@ -141,7 +141,10 @@
 
       <!-- Header Start -->
       <div class="container-fluid header bg-white p-0">
-        <div class="row g-0 flex-column-reverse flex-md-row">
+        <div
+          class="row g-0 flex-column-reverse flex-md-row"
+          style="background-color: #fdf5ec"
+        >
           <div class="col-md-6 p-5">
             <div
               style="
@@ -315,11 +318,15 @@
 
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div class="position-relative overflow-hidden pe-0">
-                <img
+                
+
+                <a href="img/location_map.png" class="glightbox-map">
+                        <img
                   class="img-fluid w-100"
                   src="img/location_map.png"
                   style="border-radius: 20px"
                 />
+                      </a>
               </div>
             </div>
           </div>
@@ -924,15 +931,15 @@
                 ></iframe>
                 <div
                   class="responsive-block"
-                  style="display: flex; justify-content: space-around"
+                  style="display: flex; justify-content: space-between; gap:40px"
                 >
-                  <div style="margin-top: 20px">
+                  <div style="margin-top: 20px; width: 50%;" class="width-100">
                     <p>
-                      <i class="fa fa-map-marker-alt me-3"></i>Kollur, Guntur,
-                      Andhra Pradesh
+                      <i class="fa fa-map-marker-alt me-3"></i>SY.NO.384/D1A, <br />BEHIND APHRDI OFFICE, KAZAM,
+                      Mangalagiri Village, Guntur, Andhra Pradesh - 522503
                     </p>
                   </div>
-                  <div style="margin-top: 20px">
+                  <div style="margin-top: 20px; width: 50%;" class="width-100">
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p>
                       <i class="fa fa-envelope me-3"></i>
@@ -1043,6 +1050,22 @@
       var lightboxInlineIframe = GLightbox({
         selector: ".glightbox4",
       });
+
+      // Initialize GLightbox for the gallery as usual
+const galleryLightbox = GLightbox({
+  selector: '.glightbox'  // your existing gallery
+});
+
+// Initialize GLightbox separately for the map
+const mapLightbox = GLightbox({
+  selector: '.glightbox-map', // targets only the map image
+  loop: false,                // disables next/prev looping
+  slideEffect: 'none',        // removes slide animation
+  closeButton: true,           // shows only close button
+  touchNavigation: false,      // optional: disables swipe
+  autoplayVideos: false
+});
+
 
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
