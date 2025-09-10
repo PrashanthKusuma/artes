@@ -18,6 +18,74 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.font-dancing-script {
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* keeps nav outside image clicks */
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  background: #9f7943a9;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: all; /* re-enable button clicks */
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background: #9f7843;
+}
+
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: #9f79438d;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  transition: background 0.3s;
+}
+.owl-dot.active span {
+  background: #9f7843;
+}
+
+
 
 /*** Spinner ***/
 #spinner {
@@ -204,6 +272,21 @@
 @media (max-width: 768px) {
     .header-carousel .owl-nav {
         left: 25px;
+    }
+    .responsive-block {
+        display: block !important;
+    }
+    .responsive-none {
+        display: none !important;
+    }
+    .width-100 {
+        width: 100% !important;
+    }
+    .responsive-gap-3 {
+        gap: 1rem !important;
+    }
+    .responsive-flex-col {
+        flex-direction: column !important;
     }
 }
 
@@ -441,4 +524,31 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/* Container setup */
+.box .inner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image setup */
+.box .inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease; /* smooth zoom */
+  transform: scale(1); /* default scale */
+}
+
+/* Hover zoom effect */
+.box .inner:hover img {
+  transform: scale(1.08); /* zoom on hover */
+  cursor: pointer; /* optional: indicate interactivity */
+}
+
+/* Remove any unwanted overlays */
+.box .inner::after,
+.box .inner .overlay-icon {
+  display: none !important;
 }
