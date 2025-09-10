@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone   = htmlspecialchars(trim($_POST['phone']));
 
     // Your email address where you want to receive the form submissions
-    $to = "paradoxk30@gmail.com"; 
+    $to = "sales@arhomes.in"; 
 
     // Subject
     $subject = "New Contact Form Submission from " . $name;
