@@ -96,6 +96,17 @@
    /* makes image slightly lighter */
 }
 
+.my-location-div {
+    /* adjust as needed */
+  background-image: 
+    linear-gradient(RGBA(255, 225, 182,0.95), RGBA(255, 225, 182,0.95)), /* light brown overlay */
+    url('../img/location-bg.jpeg'); /* your image */
+  background-size: cover;   /* cover the whole div */
+  background-position: center;
+  background-repeat: no-repeat;
+   /* makes image slightly lighter */
+}
+
 
 
 /*** Spinner ***/
