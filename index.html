@@ -224,7 +224,7 @@
             </p>
             <div style="display: flex; gap: 4">
               <a
-                href=""
+                href="#contact"
                 class="btn btn-primary py-3 px-5 me-3 animated fadeIn font-roboto-condensed"
                 >Book Now</a
               >
@@ -898,6 +898,7 @@
                   gap: 20px;
                 "
               >
+              <form action="sendmail.php" method="POST" class="contact-form">
                 <input
                   type="text"
                   placeholder="Your Email"
@@ -907,6 +908,7 @@
                     border: none;
                     border-radius: 5px;
                   "
+                  name="email"
                 />
                 <input
                   class=""
@@ -918,6 +920,7 @@
                     border: none;
                     border-radius: 5px;
                   "
+                  name="name"
                 />
 
                 <input
@@ -929,6 +932,7 @@
                     border: none;
                     border-radius: 5px;
                   "
+                  name="phone"
                 />
                 <textarea
                   rows="4"
@@ -940,10 +944,12 @@
                     border-radius: 5px;
                     resize: none;
                   "
+                  name="message"
                 ></textarea>
-                <button class="btn btn-primary py-3 px-5" style="width: 100%">
+                <button class="btn btn-primary py-3 px-5" style="width: 100%" type="submit">
                   Send Enquiry
                 </button>
+                </form>
               </div>
             </div>
             <div

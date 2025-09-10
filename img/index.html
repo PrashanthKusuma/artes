@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>403 Forbidden — AR Homes</title>
+    <meta
+      name="description"
+      content="403 Forbidden — You don't have permission to access this page. AR Homes Signature Villas."
+    />
+    <meta name="theme-color" content="#9f7843" />
+
+    <!-- Open Graph (optional placeholders) -->
+    <meta property="og:title" content="403 Forbidden — AR Homes" />
+    <meta
+      property="og:description"
+      content="You don't have permission to access this page."
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --brand: #9f7843;
+        --cream: #fdf5ec;
+        --bg: #fbf8f4;
+        --muted: #6b6b6b;
+        --maxw: 980px;
+        --radius: 14px;
+        --glass: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+
+      /* Page layout */
+      
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #222;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 24px;
+      }
+
+      .card {
+        max-width: var(--maxw);
+        width: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 255, 255, 0.88)
+        );
+        border-radius: var(--radius);
+        box-shadow: 0 10px 30px rgba(37, 37, 37, 0.08);
+        display: flex;
+        gap: 32px;
+        overflow: hidden;
+      }
+
+      /* Left visual column */
+      .card-visual {
+        min-width: 320px;
+        flex: 0 0 360px;
+        background: linear-gradient(
+            180deg,
+            rgba(159, 120, 67, 0.06),
+            rgba(159, 120, 67, 0.03)
+          ),
+          url("img/carousel-1.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 36px;
+      }
+
+      .badge {
+        background: var(--brand);
+        color: white;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 600;
+        box-shadow: 0 6px 18px rgba(159, 120, 67, 0.18);
+        letter-spacing: 0.2px;
+        font-size: 14px;
+      }
+
+      .visual-code {
+        margin-top: 18px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.45);
+        padding: 8px 12px;
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+      }
+
+      /* Right content column */
+      .card-body {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 44px;
+        line-height: 1;
+        letter-spacing: -0.6px;
+        font-weight: 700;
+        color: #111;
+      }
+
+      p.lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        max-width: 60ch;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 6px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        padding: 12px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .btn-primary {
+        background: var(--brand);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(159, 120, 67, 0.18);
+      }
+      .btn-ghost {
+        background: transparent;
+        color: var(--brand);
+        border: 1px solid rgba(159, 120, 67, 0.12);
+      }
+
+      .muted {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .help {
+        margin-top: 14px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      /* small screens */
+      @media (max-width: 880px) {
+        .card {
+          flex-direction: column;
+        }
+        .card-visual {
+          flex: 0 0 200px;
+          min-height: 160px;
+          width: 100%;
+        }
+        h1 {
+          font-size: 32px;
+        }
+        .card-body {
+          padding: 24px;
+        }
+      }
+
+      /* accessibility focus */
+      a:focus,
+      button:focus {
+        outline: 3px solid rgba(159, 120, 67, 0.18);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+        <div><div style="display: flex; justify-content: center; align-items: center;">
+            <div style="background-color: #9f7843; padding: 10px 20px 10px 20px; border-radius: 25px; color: #fff; font-weight: 500;">403 — Forbidden</div>
+        </div>
+        <div>You don't have permission to view this page.</div></div>
+    </div>
+    <br/> -->
+
+    <main role="main" aria-labelledby="page-title">
+      <div class="card" role="region" aria-label="403 forbidden"  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+        <aside class="card-visual" aria-hidden="true">
+          <div class="badge">403 — Forbidden</div>
+          <div class="visual-code">
+            You don't have permission to view this page.
+          </div>
+        </aside>
+
+        <section class="card-body">
+          <h1 id="page-title">Access Denied</h1>
+          <p class="lead">
+            Sorry — you don’t have permission to access this resource. If you
+            believe this is an error, please contact the site administrator or
+            check the link you followed.
+          </p>
+
+          <div class="actions" role="group" aria-label="actions">
+            <a
+              class="btn btn-primary"
+              href="/"
+              title="Go to homepage"
+              id="homeBtn"
+            >
+              <!-- simple inline icon -->
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 11.5L12 4l9 7.5"
+                  stroke="#fff"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 5v14"
+                  stroke="#fff"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Go to Home
+            </a>
+
+            <button
+              class="btn btn-ghost"
+              id="backBtn"
+              title="Go back to previous page"
+            >
+              ← Back
+            </button>
+          </div>
+
+          <div class="muted" style="margin-top: 8px; font-size: 13px">
+            If you reached this page while trying to access a secure area,
+            ensure you are logged in with the correct account.
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      // Back button behavior
+      document.getElementById("backBtn").addEventListener("click", function () {
+        if (document.referrer && document.referrer !== location.href) {
+          history.back();
+        } else {
+          // if no referrer, go home
+          location.href = "/";
+        }
+      });
+
+      // enhance keyboard accessibility: Enter on Back button
+      document
+        .getElementById("backBtn")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter") this.click();
+        });
+
+      // optionally add a timed redirect (commented out)
+      // setTimeout(()=>{ location.href = '/'; }, 15000);
+    </script>
+  </body>
+</html>
