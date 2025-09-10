@@ -299,6 +299,9 @@
     .responsive-flex-col {
         flex-direction: column !important;
     }
+    .responsive-margin-left-0 {
+        margin-left: 0px !important;
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
